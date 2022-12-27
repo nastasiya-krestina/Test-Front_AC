@@ -1,0 +1,11 @@
+@import './base.css';
+@import url("https://db.onlinewebfonts.com/c/4d48ce12aa61776288d8361ba748c531?family=PhosphateRRSolid");
+
+body {
+  font-family: "PhosphateRRSolid", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--black);
+  color: var(--white);
+}

@@ -8,6 +8,16 @@ export default {
             default: "Отправить письмо",
         },
 
+        width: {
+            type: [Number, String],
+            default: 30
+        },
+
+        height: {
+            type: [Number, String],
+            default: 30
+        },
+
         disabled: {
             type: Boolean,
             default: false,
@@ -64,9 +74,8 @@ export default {
                 'button__color-danger': this.danger,
                 'button__color-action': this.action,
                 'button__color-question': this.question,
-
             }
-        }
+        },
     },
 
     methods: {
@@ -78,22 +87,23 @@ export default {
 </script>
 
 <template>
-    <div 
+    <button 
     @click="click"
     class="button"
     :class="className"
+    :width="width"
+    :height="height"
     >
-        <span class="button__text">
-            {{ title }}
-        </span>
-    </div>
+        {{ title }}
+    </button>
 </template>
 
 <style>
 .button {
-    padding: 15px 46px;
+    padding: 19px;
     cursor: pointer;
     border-radius: 20px;
+    font-family: "PhosphateRRSolid", sans-serif;
 }
 
 .button__disabled {
